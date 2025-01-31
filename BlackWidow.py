@@ -1,6 +1,3 @@
-# Programmer: Oliver Gibbs
-# Branch: Welcome
-# Date: 1.30.25
-# Program:BlackWidow
+print("Welcome Branch - Developer: Oliver Gibbs")
 
-print("Welcome to InforTechCenter V1.0")
+print("\n\tWelcome to InfoTechCenter V1.0")
