@@ -4,7 +4,7 @@ import time
 
 print("Welcome Branch - Developer: Oliver Gibbs")
 
-print("\n\tWelcome to InfoTechCenter V1.0")
+print("\n\tWelcome to InfoTechCenter V1.0\n\n")
 
 x = 0
 ellipsis = 0
