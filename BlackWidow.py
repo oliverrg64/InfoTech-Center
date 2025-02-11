@@ -1,6 +1,6 @@
 # Print a divider and header for better readability
 print("\n***********************************\n")
-print("Weather Branch - Developer: Oliver Gibbs\n")
+print("Weather Branch - Developer: Oliver Gibbs")
 
 # Import Libraries Here!
 import random  # For generating random weather conditions
@@ -10,10 +10,10 @@ from time import sleep  # Import sleep in case you want to add delays later
 def weather():
     # A list of possible weather conditions
     weatherForecastList = ["snowy", "blizzard", "icy", "rainy", "windy", "sunny"]
-    
+
     # Select a random weather condition from the list
     weatherCondition = random.choice(weatherForecastList)
-    
+
     # Return the selected weather condition
     return weatherCondition
 
@@ -26,21 +26,33 @@ def vehicleResponseSystem():
     if weatherAlert == "snowy":
         # If the weather is snowy, extend the alarm time by 30 minutes
         print("\nThe National Weather Service has updated your alarm by 30 minutes because of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("VRS has been engaged and has limited this vehicles travel speed to 60MPH")
     elif weatherAlert == "blizzard":
         # If the weather is a blizzard, extend the alarm time by 60 minutes
         print("\nThe National Weather Service has updated your alarm by 60 minutes because of the forecast of a", weatherAlert,"in your area.")
+        sleep(1)
+        print("VRS has been engaged and has limited this vehicles travel speed to 55MPH")
     elif weatherAlert == "icy":
         # If the weather is icy, extend the alarm time by 90 minutes
         print("\nThe National Weather Service has updated your alarm by 90 minutes because of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("VRS has been engaged and has limited this vehicles travel speed to 45MPH")
     elif weatherAlert == "rainy":
         # If the weather is rainy, extend the alarm time by 10 minutes
         print("\nThe National Weather Service has updated your alarm by 10 minutes because of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("VRS has been engaged and has limited this vehicles travel speed to 70MPH")
     elif weatherAlert == "windy":
         # If the weather is windy, extend the alarm time by 5 minutes
         print("\nThe National Weather Service has updated your alarm by 5 minutes because of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("VRS has been engaged and has limited this vehicles travel speed to 75MPH")
     else:
         # If the weather is sunny or any other condition, no alarm update is needed
         print("\nThe National Weather Service has forecasted", weatherAlert, "weather conditions. Alarm update not needed. Drive safe!")
+        sleep(1)
+        print("VRS has not been engaged - Travel Speed Limitations deactivated")
 
 # Call the vehicleResponseSystem function to display the result
 vehicleResponseSystem()
