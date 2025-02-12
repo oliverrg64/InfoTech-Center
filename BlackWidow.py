@@ -1,7 +1,11 @@
-
 # Import necessary libraries
 import sys  # For controlling the terminal output (like updating the message on the same line)
 import time  # For adding delays (like in the loading process)
+import random
+from time import sleep
+
+
+print("Weather Branch - Developer: Oliver Gibbs\n")
 
 # ANSI escape codes for rainbow colors
 RED = "\033[31m"  # Red color
@@ -52,10 +56,9 @@ while x != 20:
     # Once the loop reaches 20 iterations, print the final success message (in green)
     # This indicates the system has successfully booted
     if x == 20:
-        print(GREEN + "\nOperating System Booted up - Retina Scanned - Access Granted" + RESET)
+        print(GREEN + "\n\nOperating System Booted up - Retina Scanned - Access Granted" + RESET)
 
-import random
-from time import sleep
+
 
 # Print a divider and header for better readability
 print("\n***********************************\n")
