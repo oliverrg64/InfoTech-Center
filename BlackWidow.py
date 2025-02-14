@@ -1,4 +1,2 @@
-# Programmer: Oliver Gibbs
-# Branch: Gasoline
-# Date:
-# Program:
+print("\n***********************************\n")
+print("Gasoline Branch - Developer: Oliver Gibbs\n")
