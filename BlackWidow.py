@@ -28,5 +28,11 @@ def gasLevelAlert():
         print("Warning - Fuel levels nearing low levels - Setting GPS route to nearest gas station")
         sleep(1.25)
         print("The closest gas station is", gasStations(), "which is", milesToGasStationQuarterTank, "miles away.")
+    elif gasLevelIndicator == "Half":
+        print("Warning - Fuel levels at 50% - Gas refill not needed yet.")
+    elif gasLevelIndicator == "ThreeQuarterTank":
+        print("Warning - Fuel levels at 75% - Gas refill not needed yet")
+    else:
+        print("Your gas tank is full, Drive safe!")
 
 gasLevelAlert()
