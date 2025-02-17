@@ -21,18 +21,18 @@ def gasLevelAlert():
         sleep(1.25)
         print("Alerting AAA")
     elif gasLevelIndicator == "Low":
-        print("Warning - Low Fuel - Setting GPS route to nearest gas station")
+        print("Warning - Low Fuel - Setting GPS route to nearest gas station\n")
         sleep(1.25)
-        print("The closest gas station is", gasStations(), "which is", milesToGasStationLow, "miles away.")
-    elif gasLevelIndicator == "QuarterTank":
-        print("Warning - Fuel levels nearing low levels - Setting GPS route to nearest gas station")
+        print("The closest gas station is", gasStations(), "which is", milesToGasStationLow, "miles away.\n")
+    elif gasLevelIndicator == "Quarter Tank":
+        print("Warning - Fuel levels nearing low levels - Setting GPS route to nearest gas station.\n")
         sleep(1.25)
-        print("The closest gas station is", gasStations(), "which is", milesToGasStationQuarterTank, "miles away.")
-    elif gasLevelIndicator == "Half":
-        print("Warning - Fuel levels at 50% - Gas refill not needed yet.")
-    elif gasLevelIndicator == "ThreeQuarterTank":
-        print("Warning - Fuel levels at 75% - Gas refill not needed yet")
+        print("The closest gas station is", gasStations(), "which is", milesToGasStationQuarterTank, "miles away.\n")
+    elif gasLevelIndicator == "Half Tank":
+        print("Warning - Fuel levels at 50 Percent - Gas refill not needed yet.\n")
+    elif gasLevelIndicator == "Three-Quarter Tank":
+        print("Warning - Fuel levels at 75 Percent - Gas refill not needed yet.\n")
     else:
-        print("Your gas tank is full, Drive safe!")
+        print("Your gas tank is full, Drive safe!\n")
 
 gasLevelAlert()
